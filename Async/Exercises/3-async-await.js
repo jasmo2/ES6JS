@@ -1,6 +1,8 @@
 /**
  * Con el API de Github pedir el usuario de github usando promesas
  * he imprimirlo por consola el nombre del usuario
+ *
+ * `node Async/Exercises/3-await`
  */
 
 // HINT: usar FETCH de JS para el llamado al API
