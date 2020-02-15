@@ -11,5 +11,8 @@
     "es6"
   ],
   "author": "jasmo2",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
 }
