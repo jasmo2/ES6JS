@@ -9,5 +9,15 @@
 // https://dev.to/johnpaulada/synchronous-fetch-with-asyncawait
 
 const fetch = require('node-fetch')
-const githubUser = ''
+const githubUser = 'jasmo2'
 const url = `https://api.github.com/users/${githubUser}`
+
+async function githubFetch() {
+  const res = await fetch(url)
+  const json = await res.json()
+
+  const userName = json.name
+  console.log('TCL: githubFetch -> userName', userName)
+}
+
+githubFetch()
