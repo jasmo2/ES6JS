@@ -9,5 +9,12 @@ function fibonacci(num) {
  * ¿Como podríamos hacer para que sea asyncrona?
  */
 
+function callbackFibo(cb) {
+  setTimeout(() => {
+    result = fibonacci(35)
+    cb(result)
+  }, 0)
+}
+
 callbackFibo(result => console.log(`TCL: el resultado de fibo es ${result}`))
 console.log('TCL: Después de la función')
