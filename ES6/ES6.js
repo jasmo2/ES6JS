@@ -106,3 +106,10 @@
 //     super(side, side)
 //   }
 // }
+
+/**
+ * Clases
+ *
+ * ARticulo interesante
+ * https://medium.com/@jmz12/usando-clases-en-javascript-e07f0e25c67d
+ */
