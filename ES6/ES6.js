@@ -113,3 +113,8 @@
  * ARticulo interesante
  * https://medium.com/@jmz12/usando-clases-en-javascript-e07f0e25c67d
  */
+
+/**
+ * Principios Solid
+ * https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+ */
