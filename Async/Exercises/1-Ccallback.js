@@ -12,3 +12,8 @@
  * Random
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
  */
+
+// El Callback debe recibir 2 parametro el indicie y un string
+
+// La función principal debe recibir un callback he iterar como se dice en
+// el encabezado
