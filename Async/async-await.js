@@ -24,4 +24,40 @@ async function asyncCall() {
   console.log('TCL: asyncCall -> result 4', result)
 }
 
-asyncCall()
+function promiseCall() {
+  server3SecondsResponse()
+    .then(result => {
+      console.log('TCL: promiseCall -> result 1', result)
+      return server3SecondsResponse()
+    })
+    .then(result => {
+      console.log('TCL: promiseCall -> result 2', result)
+      return server3SecondsResponse()
+    })
+    .then(result => {
+      console.log('TCL: promiseCall -> result 3', result)
+      return server3SecondsResponse()
+    })
+    .then(result => {
+      console.log('TCL: promiseCall -> result 4', result)
+      return server3SecondsResponse()
+    })
+}
+
+function asCallbackCall() {
+  server3SecondsResponse().then(result => {
+    console.log('TCL: asCallback -> result 1', result)
+    server3SecondsResponse().then(result => {
+      console.log('TCL: asCallback -> result 2', result)
+      server3SecondsResponse().then(result => {
+        console.log('TCL: asCallback -> result 3', result)
+        server3SecondsResponse().then(result => {
+          console.log('TCL: asCallback -> result 4', result)
+        })
+      })
+    })
+  })
+}
+// asyncCall()
+// promiseCall()
+asCallbackCall()
